@@ -1,88 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center_horizontal"
     android:orientation="vertical"
-    android:paddingBottom="16dp"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
-    tools:context="com.gps3.vraj.beta.MainActivity">
-
-    <Button
-        android:id="@+id/btnTrackLocation"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Start location updates"
-        android:visibility="visible"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="698dp" />
-
-    <Button
-        android:id="@+id/btnGetCoordinates"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Get Coordinates"
-        android:visibility="visible"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="698dp" />
+    android:gravity="center"
+    android:padding="24dp">
 
     <TextView
-        android:id="@+id/txtLabel"
-        android:layout_width="match_parent"
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="You are at"
-        android:textSize="25sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="698dp" />
-
-    <TextView
-        android:id="@+id/txtCoordinates"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text=""
-        android:textSize="25dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="698dp" />
+        android:text="Step 1: grant audio capture access"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/grantAudioButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="sendsms"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="678dp" />
+        android:text="Grant Audio Capture Access" />
 
     <Button
-        android:id="@+id/button6"
-        android:layout_width="match_parent"
-        android:layout_height="58dp"
-        android:text="Manual phone entry" />
-
-    <TextView
-        android:id="@+id/result2"
+        android:id="@+id/setWallpaperButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="onClickSelectContact"
-        android:text="Select a Contact" />
-
+        android:layout_marginTop="16dp"
+        android:text="Set as Live Wallpaper" />
 
 </LinearLayout>
-
-
-

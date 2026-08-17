@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">GPS3</string>
+    <string name="app_name">WaveLock</string>
+    <string name="wallpaper_description">Audio-reactive lock screen visualizer</string>
 </resources>
